@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="STYLE.CSS">
+<body>
+    <h1>
+    nous somme le groupe noir
+    </h1>
+    <pre>
+    Exercice sur le crud avec le php par differents styles 
+    le 26/08/2021
+    L1 informatique de gestion ISES
+    </pre>
+
+    <FIEldset name="front">
+    <FORM action="controleur.php" method="post">
+  
+    <input type="hidden" name="code" placeholder="ID_produit">
+    <br>
+    <br>
+    <input type="text" name="des" placeholder="Designation">
+    <br>
+    <br>
+    <input type="text" name="quant"  placeholder="Quantite">
+    <br>
+    <br>
+    <input type="text" name="prix" placeholder="Prix_produit">
+   
+    <hr>
+    <button   name="ajout">AJOUTER   </button>
+    <BUTTon name="sup">SUPPRIMER</BUTTon>
+    <BUTTon name="mod">MIDIFIER</BUTTon>
+    <BUTTon  name="lis">LISTER</BUTTon>
+    </FORM>
+    </FIEldset>
+
+    <fieldset>
+    <?php
+    require 'liste_produit.php'
+    ?>
+
+    </fieldset>
+</body>
+</html>
